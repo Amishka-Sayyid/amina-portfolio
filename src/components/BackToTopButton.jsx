@@ -23,10 +23,7 @@ export default function BackToTopButton() {
   if (!isVisible) return null;
 
   return (
-    <button
-      onClick={scrollToTop}
-      className="fixed bottom-10 right-10 bg-[#F2E9E4] text-[#4A4E69] p-3 rounded-full hover:bg-[#C9ADA7] transition duration-300"
-    >
+    <button onClick={scrollToTop} className="back-to-top-btn">
       ↑
     </button>
   );
