@@ -41,6 +41,30 @@ p {
   line-height: 1.6;
 }
 
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  letter-spacing: 0.05em;
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+button:hover {
+  border-color: var(--color-secondary);
+  transform: scale(1.05);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
 /* back to top button  */
 .back-to-top-btn {
   position: fixed;
@@ -60,4 +84,25 @@ p {
 .back-to-top-btn:hover {
   border-color: var(--color-secondary);
   transform: scale(1.05);
+}
+
+/* footer styling */
+
+footer {
+  background-color: #22223b;
+  padding: 0.7em;
+  color: #f2e9e4;
+  text-align: center;
+}
+
+footer p,
+footer a {
+  color: #f2e9e4;
+  text-decoration: none;
+  transition: transform 0.2s ease-in-out;
+}
+
+footer a:hover {
+  color: #c9ada7;
+  transform: scale(1.2);
 }

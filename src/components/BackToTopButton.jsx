@@ -23,7 +23,11 @@ export default function BackToTopButton() {
   if (!isVisible) return null;
 
   return (
-    <button onClick={scrollToTop} className="back-to-top-btn">
+    <button
+      onClick={scrollToTop}
+      aria-label="Scroll to top"
+      className="back-to-top-btn"
+    >
       ↑
     </button>
   );
