@@ -2,6 +2,8 @@
   --color-primary: #4a4e69;
   --color-secondary: #9a8c98;
   --color-light: #f2e9e4;
+  --color-optional: #c9ada7;
+  --color-dark: #22223b;
   --font-main: sans-serif;
 }
 
@@ -24,5 +26,42 @@ section:nth-child(odd) {
   background-color: var(--color-light);
 }
 section:nth-child(even) {
-  background-color: var(--color-secondary);
+  background-color: var(--color-primary);
+}
+
+/* odd section texts */
+section:nth-child(odd) h1 {
+  color: var(--color-primary);
+}
+
+section:nth-child(odd) h2 {
+  color: rgba(0, 0, 0, 0.65);
+}
+
+section:nth-child(odd) p {
+  color: var(--color-dark);
+}
+
+/* even section texts */
+section:nth-child(even) h1 {
+  color: var(--color-light);
+}
+section:nth-child(even) h2 {
+  color: rgba(255, 255, 255, 0.78);
+}
+section:nth-child(even) p {
+  color: var(--color-light);
+}
+
+/* button in even section  */
+section:nth-child(even) button {
+  background-color: var(--color-light);
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+  transition: background-color 0.25s ease, transform 0.25s ease;
+}
+
+section:nth-child(even) button:hover {
+  background-color: #f2e9e4e7;
+  transform: scale(1.05);
 }

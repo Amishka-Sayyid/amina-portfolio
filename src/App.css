@@ -22,12 +22,16 @@ h1 {
   font-size: clamp(2rem, 5vw, 3rem);
   font-weight: 700;
   color: var(--color-primary);
+  letter-spacing: 2px;
+  text-transform: capitalize;
 }
 
 h2 {
   font-size: clamp(1.5rem, 4vw, 2.25rem);
   font-weight: 600;
   color: var(--color-primary);
+  letter-spacing: 2px;
+  text-transform: capitalize;
 }
 
 p {
@@ -35,6 +39,7 @@ p {
   font-weight: 400;
   color: var(--color-primary);
   line-height: 1.6;
+  letter-spacing: 1.3px;
 }
 
 button {
@@ -49,10 +54,12 @@ button {
   color: var(--color-light);
   cursor: pointer;
   transition: all 0.25s ease;
+  letter-spacing: 2px;
+  text-transform: capitalize;
 }
 
 button:hover {
-  border-color: var(--color-secondary);
+  background-color: #4a4e69ed;
   transform: scale(1.05);
 }
 
