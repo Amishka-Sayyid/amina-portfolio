@@ -86,6 +86,12 @@ section:nth-child(even) button:hover {
   text-align: center;
 }
 
+/* projects section */
+
+#projects h1 {
+  text-align: center;
+}
+
 /* simple media query for mobile */
 @media (max-width: 768px) {
   #hero {
