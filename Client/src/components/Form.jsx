@@ -7,17 +7,35 @@ export default function Form() {
     message: "",
   });
 
-  function handleSubmit(event) {
-    event.preventDefault();
-    console.log("The form values are", formValues);
-  }
-
   function handleInputChange(event) {
     setFormValues({
       ...formValues,
       [event.target.name]: event.target.value,
     });
   }
+
+  async function handleSubmit(event) {
+    event.preventDefault();
+    try {
+      const response = await fetch("http://localhost:8080/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formValues),
+      });
+
+      if (response.ok) {
+        alert("Message sent!");
+        // reset form
+        setFormValues({ name: "", email: "", message: "" });
+      } else {
+        alert("Failed to send message.");
+      }
+    } catch (error) {
+      console.error("Error sending message:", error);
+      alert("Error sending message");
+    }
+  }
+
   return (
     <form
       action="/contact"
