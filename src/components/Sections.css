@@ -76,7 +76,8 @@ section:nth-child(even) button:hover {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.11);
 }
 
-#hero {
+#hero,
+#contact {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -84,17 +85,57 @@ section:nth-child(even) button:hover {
   gap: 1.3rem;
   padding: 1rem;
   text-align: center;
+  width: 100vw;
 }
 
 /* projects section */
-
-#projects h1 {
+#projects,
+#about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.3rem;
+  padding: 1rem;
   text-align: center;
+  width: 100vw;
+}
+#projects h1,
+#about h1 {
+  text-align: center;
+}
+
+/* about section */
+
+#about div {
+  width: 80%;
+  text-align: center;
+  align-items: center;
+}
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.about-grid svg {
+  font-size: 4rem;
+  color: #22223b;
+  transition: transform 0.3s ease;
+}
+
+.about-grid svg:hover {
+  transform: scale(1.1);
+  color: #4a4e69;
 }
 
 /* simple media query for mobile */
 @media (max-width: 768px) {
-  #hero {
+  #hero,
+  #contact {
     flex-direction: column;
   }
 
