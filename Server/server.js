@@ -38,7 +38,7 @@ app.get("/contactDetails", async (req, res) => {
 // ---------------------------------
 //creating routes to insert data
 app.post("/contact", async (req, res) => {
-  console.log(req.body);
+  // console.log(req.body);
 
   const { name, email, message } = req.body;
   try {
