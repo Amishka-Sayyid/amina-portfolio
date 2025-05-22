@@ -9,7 +9,7 @@
 
 section {
   min-height: 90vh;
-  width: 100vw;
+  width: 100%;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   opacity: 0;
   transform: translateY(20px);
@@ -76,8 +76,7 @@ section:nth-child(even) button:hover {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.11);
 }
 
-#hero,
-#contact {
+#hero {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -85,7 +84,7 @@ section:nth-child(even) button:hover {
   gap: 1.3rem;
   padding: 1rem;
   text-align: center;
-  width: 100vw;
+  width: 100%;
 }
 
 /* projects section */
@@ -98,7 +97,7 @@ section:nth-child(even) button:hover {
   gap: 1.3rem;
   padding: 1rem;
   text-align: center;
-  width: 100vw;
+  width: 100%;
 }
 #projects h1,
 #about h1 {
@@ -132,10 +131,41 @@ section:nth-child(even) button:hover {
   color: #4a4e69;
 }
 
+/* contact section */
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 1000px;
+  text-align: left;
+}
+
+.contact-info,
+.contact-form-container {
+  padding: 1rem;
+}
+.contact-info {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#contact a {
+  color: #f2e9e4;
+  font-size: 3rem;
+}
+
 /* simple media query for mobile */
 @media (max-width: 768px) {
-  #hero,
-  #contact {
+  #hero {
     flex-direction: column;
   }
 
