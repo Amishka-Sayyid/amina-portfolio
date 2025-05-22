@@ -49,7 +49,7 @@ const MyProjects = [
     image: "/localskillhub.jpg",
     title: "Local Skills Hub",
     description:
-      "Next.js app for local skill-sharing. Users can join events, manage profiles, and connect with their community.Features Clerk auth, PostgreSQL, MUI, Radix UI, and Framer Motion",
+      "A collaborative group project: a Next.js app for local skill-sharing where users can join events, manage profiles, and connect with their community. Features Clerk authentication, PostgreSQL, MUI, Radix UI, and Framer Motion..",
     github: "https://github.com/Amishka-Sayyid/LocalSkillsHub",
     live: "https://week-12-assignment-weld.vercel.app/",
   },
@@ -85,7 +85,7 @@ const MyProjects = [
     image: "/photo.jpg",
     title: "PhotographyStudio",
     description:
-      "A responsive photography portfolio website showcasing image galleries, services, and contact forms. Built with modern web technologies and styled for a clean, professional aesthetic.",
+      "A collaborative group project:A responsive photography portfolio website showcasing image galleries, services, and contact forms. Built with modern web technologies and styled for a clean, professional aesthetic.",
     github: "https://github.com/Amishka-Sayyid/PhotographyStudio",
     live: "https://photographystudio.onrender.com/",
   },
