@@ -1,11 +1,18 @@
 import "./Form.css";
 import { useState } from "react";
+
 export default function Form() {
   const [formValues, setFormValues] = useState({
     name: "",
     email: "",
     message: "",
   });
+
+  // Decide base URL depending on environment
+  const baseURL =
+    window.location.hostname === "localhost"
+      ? "http://localhost:8080"
+      : "https://portfolio-server-320b.onrender.com";
 
   function handleInputChange(event) {
     setFormValues({
@@ -17,7 +24,7 @@ export default function Form() {
   async function handleSubmit(event) {
     event.preventDefault();
     try {
-      const response = await fetch("http://localhost:8080/contact", {
+      const response = await fetch(`${baseURL}/contact`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formValues),
@@ -25,7 +32,6 @@ export default function Form() {
 
       if (response.ok) {
         alert("Message sent!");
-        // reset form
         setFormValues({ name: "", email: "", message: "" });
       } else {
         alert("Failed to send message.");
@@ -37,12 +43,7 @@ export default function Form() {
   }
 
   return (
-    <form
-      action="/contact"
-      method="post"
-      onSubmit={handleSubmit}
-      className="contact-form"
-    >
+    <form onSubmit={handleSubmit} className="contact-form">
       <label htmlFor="name">Name:</label>
       <input
         type="text"
