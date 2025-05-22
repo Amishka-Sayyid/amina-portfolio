@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import "./Projects.css";
-
+import "./Sections.css";
 export default function Projects() {
   return (
     <section id="projects" className="projects-section">
@@ -58,7 +58,7 @@ const MyProjects = [
     image: "/Social.jpg",
     title: "Social Network",
     description:
-      "A social networking platformbuilt with Next.js and React, featuring user authentication via Clerk, interactive UI components using MUI and Radix UI, and styled with Tailwind CSS.",
+      "A social networking platform built with Next.js and React, featuring user authentication via Clerk, interactive UI components using MUI and Radix UI, and styled with Tailwind CSS.",
     github: "https://github.com/Amishka-Sayyid/SocialNetwork",
     live: "https://social-network-wk-9.vercel.app/",
   },
