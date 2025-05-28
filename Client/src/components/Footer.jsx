@@ -23,7 +23,7 @@ export default function Footer() {
         >
           <LinkedInIcon />
         </a>
-        <p> © 2025. All Rights Reserved.</p>
+        <p>Amina Ibrahim 2025</p>
       </footer>
     </>
   );
