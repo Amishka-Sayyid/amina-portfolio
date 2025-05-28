@@ -144,7 +144,7 @@ export default function ResponsiveAppBar() {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Download CV">
               <a
-                href="/cv/amina-ibrahim-cv.pdf"
+                href="/cv/amina-cv.pdf"
                 download
                 style={{ textDecoration: "none" }}
               >
