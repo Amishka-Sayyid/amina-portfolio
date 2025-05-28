@@ -21,9 +21,9 @@ export default function About() {
         <h1>About Me</h1>
         <div>
           <p>
-            Hey! i'm a recent Tech educators graduate who's incredibly excited
-            about software development and UX design. with a background in
-            applied computer technology, I'm well equipped with a technical
+            Hi, i'm Amina a recent Tech educators graduate who's incredibly
+            excited about software development and UX design with a background
+            in applied computer technology, I'm well equipped with a technical
             skillset and an eagerness to experiment!
           </p>
           <p>

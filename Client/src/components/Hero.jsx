@@ -7,10 +7,10 @@ export default function Hero() {
 
         <div className="heroText">
           <h1>Hi, I'm Amina</h1>
-          <h2>a Software Developer</h2>
+
           <p>
-            a fullstack developer crafting responsive, modern web applications
-            with React and Next.js.
+            A fullstack software developer, crafting responsive, modern web
+            applications in a variety of coding languages.
           </p>
           <br />
           <a href="/cv/amina-cv.pdf" download className="button">
