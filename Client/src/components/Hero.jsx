@@ -13,7 +13,7 @@ export default function Hero() {
             with React and Next.js.
           </p>
           <br />
-          <a href="/cv/amina-ibrahim-cv.pdf" download className="button">
+          <a href="/cv/amina-cv.pdf" download className="button">
             Download CV
           </a>
         </div>
